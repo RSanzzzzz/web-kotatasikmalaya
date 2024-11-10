@@ -1,0 +1,148 @@
+.ihsan-wrapper {
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.ihsan-wrapper.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ihsan-wrapper:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+#ihsan-sejarah,
+#ihsan-visimisi,
+#ihsan-geografi,
+#ihsan-demografi,
+#ihsan-list-wisata {
+    padding: 30px;
+    text-align: justify;
+}
+
+.ihsan-featured-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+
+#ihsan-sejarah table {
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+
+#ihsan-sejarah tr.ihsan-name {
+    border-bottom: 2px solid #021526;
+    color: #021526;
+    font-weight: 600;
+}
+
+#ihsan-sejarah th,
+#ihsan-sejarah td {
+    padding: 10px;
+}
+
+#ihsan-sejarah td {
+    text-align: center;
+}
+
+footer {
+    background-color: #1397d4;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .ihsan-wrapper {
+        margin: 20px;
+    }
+
+    #ihsan-sejarah,
+    #ihsan-visimisi,
+    #ihsan-geografi,
+    #ihsan-demografi {
+        padding: 20px;
+    }
+
+    #ihsan-sejarah th,
+    #ihsan-sejarah td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ihsan-navbar-container .ihsan-nav-list {
+        gap: 2rem;
+        padding-inline: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ihsan-navbar-container .ihsan-nav-list li {
+        margin: 5px 10px;
+    }
+
+    .ihsan-wrapper {
+        margin: 15px;
+    }
+
+    #ihsan-sejarah,
+    #ihsan-visimisi,
+    #ihsan-geografi,
+    #ihsan-demografi {
+        padding: 15px;
+    }
+
+    #ihsan-sejarah h2,
+    #ihsan-visimisi h2,
+    #ihsan-geografi h2,
+    #ihsan-demografi h2 {
+        padding: 10px 0 5px 0;
+    }
+
+    #ihsan-sejarah th,
+    #ihsan-sejarah td {
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ihsan-navbar-container .ihsan-nav-list {
+        gap: 1.5rem;
+    }
+
+    .ihsan-navbar-container .ihsan-nav-list li {
+        margin: 5px;
+    }
+
+    .ihsan-wrapper {
+        margin: 10px;
+    }
+
+    #ihsan-sejarah,
+    #ihsan-visimisi,
+    #ihsan-geografi,
+    #ihsan-demografi {
+        padding: 10px;
+    }
+
+    #ihsan-sejarah th,
+    #ihsan-sejarah td {
+        padding: 4px;
+    }
+}
